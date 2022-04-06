@@ -1,3 +1,19 @@
-const path = require('path');
+// npm -global command, comes with node
+// npm --version
 
-console.log(path.sep);
+// local dependency - use it only in this praticular project
+// npm i <packageName>
+
+// global dependency - use it in any project
+// npm i -g <packageName>
+
+// package.json - manifest file (stores important info about project/package)
+// manuyal approach (create package.json in the roo, create properties etc)
+// npm init (step by step, press enter to skip)
+// npm init -y (skip all the steps)
+
+const _ = require('lodash');
+
+const items = [1, [2, [3, [4]]]];
+const newItems = _.flattenDeep(items);
+console.log(newItems);
