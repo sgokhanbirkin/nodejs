@@ -10,17 +10,9 @@ app.use(express.urlencoded({ extended: false }));
 // parse json data
 app.use(express.json())
 
-
 // ----------------------------- ROUTES -----------------------------
 app.use('/api/people', people);
 app.use('/login', auth );
-
-
-
-
-
-
-
 
 // ----------------------------- SERVER -----------------------------
 app.listen(5000, () => {
